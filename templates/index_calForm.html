@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두개의 숫자를 받아서 사칙연산하기</title>
+</head>
+<body>
+    <h1>두개의 숫자를 받아서 사칙연산하기</h1>
+    <hr>
+    <form action="/cal" method="POST">
+        <p><label for="data1">숫자1 : </label>
+            <input type="text" name="data1" id="data1" placeholder="data1">
+        </p>
+        <p><label for="data2">숫자2 : </label>
+            <input type="text" name="data2" id="data2" placeholder="data2">
+        </p>
+        <button>결과보기</button>
+    </form>
+    <hr>
+    <h1>구구단 출력하기</h1>
+    <hr>
+    <form action="/gugu" method="POST">
+        <p><label for="data3">구구단 숫자 : </label>
+            <input type="text" name="data3" id="data3" placeholder="data3">
+        </p>
+        <button>결과보기</button>
+    </form>
+    <hr>
+    <h1>1부터 n까지의 누적합 구하기</h2>
+        <hr>
+        <form action="/total" method="POST">
+            <p><label for="data4"> n은? : </label>
+                <input type="text" name="data4" id="data4" placeholder="data4">
+            </p>
+            <button>결과보기</button>
+        </form>
+    <hr>
+    <h1>GET 방식으로 데이터 전달하기</h2>
+        <hr>
+        <form action="/info">
+            <p><label for="userName"> 학생이름 : </label>
+                <input type="text" name="userName" id="userName" placeholder="userName">
+            </p>
+            <p><label for="userAge"> 학생나이 : </label>
+                <input type="text" name="userAge" id="userAge" placeholder="userAge">
+            </p>
+            <button>결과보기</button>
+        </form>
+    <hr>
+    <h2> 데이터 전달 - 쿼리스트링 </h2>
+    <ul>
+        <li><a href="/resultTotal/50"> num=50, 1~50까지 합구하기 </a></li>
+        <li><a href="/resultTotal/100"> num=100, 1~100까지 합구하기 </a></li>
+        <li><a href="/resultTotal/500"> num=500, 1~500까지 합구하기 </a></li>
+</body>
+</html>
